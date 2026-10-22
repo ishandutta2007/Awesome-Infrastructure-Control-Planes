@@ -1,48 +1,57 @@
-# Awesome-Infrastructure-Control-Planes
+<div align="center">
 
-## Top Infrastructure Control Planes Ecosystem
+<a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes">
+  <img src="assets/banner.svg" alt="Awesome Infrastructure Control Planes Banner" width="100%" />
+</a>
 
+# 🚀 Awesome Infrastructure Control Planes 🎛️
 
+**A curated index of production-ready SaaS platforms and open-source infrastructure control planes, declarative orchestration engines, and continuous reconciliation systems.**
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Infrastructure-Control-Planes?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Infrastructure-Control-Planes?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-*Focused on Infrastructure as Code Orchestration, Continuous Reconciliation & Self-Hosted Control Planes*  
+<p align="center">
+  <b>Keywords:</b> Infrastructure as Code (IaC) • Cloud Control Planes • Continuous Reconciliation • GitOps • Terraform • OpenTofu • Crossplane • Pulumi • Drift Detection • Policy as Code
+</p>
 
-**Last updated: October 2026**
+</div>
 
+---
 
+## 📖 Overview
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Infrastructure Control Planes**. These tools provide the orchestration layer for managing cloud infrastructure—handling state, enforcing policy, detecting drift, and executing changes—whether through triggered CLI runs (Terraform-style) or continuous reconciliation loops (Kubernetes-native).
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Infrastructure Control Planes**. These solutions deliver the orchestration fabric for modern cloud infrastructure—managing state persistence, evaluating policy-as-code, remediating configuration drift, and executing declarative rollouts via triggered pipelines (Terraform/OpenTofu) or continuous reconciliation control loops (Kubernetes/Crossplane).
 
+---
 
+## 📑 Table of Contents
 
-**Examples** include Terraform Cloud, Pulumi Cloud, Spacelift, env0, Scalr, Crossplane, AWS CloudFormation, Azure Bicep, Google Cloud Deployment Manager, and Morpheus Data (the category leaders).
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Control Planes](#️-saashosted-platforms)
+- [🔓 Open-Source Control Planes & Engines](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
+---
 
+## 📊 Sector Overview & Market Dynamics
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding per-resource SaaS pricing, and retaining full control over infrastructure state and policy. The open-source landscape is anchored by **OpenTofu** (the MPL-licensed Terraform fork), **Crossplane** (the Kubernetes-native control plane with continuous reconciliation), **Pulumi** (the multi-language IaC engine with self-managed backend), **Atlantis** (the self-hosted PR automation tool), and **CloudFormation** (AWS's native IaC, free with AWS usage). Note: Google Cloud Deployment Manager is effectively deprecated, with Terraform and Config Controller as the recommended paths .
+The global Infrastructure as Code (IaC) and Cloud Systems Management market is estimated at **$1.5B to $7B+** (broad cloud systems management software reaching upwards of **$40B+**), compounding at an annual growth rate (CAGR) of **~20–24%**. Market dynamics reflect a **moderately fragmented yet bifurcated sector**: hyperscalers dominate native workloads with free proprietary tooling, while independent orchestration is anchored by category champions alongside emerging multi-IaC orchestration startups, preventing a single "winner-take-all" outcome.
 
+---
 
+## ☁️ SaaS/Hosted Platforms
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
-
-The global Infrastructure as Code (IaC) and Cloud Systems Management market is estimated at **$1.5B to $7B+** (broad cloud automation software reaching upwards of $40B+), compounding at an annual growth rate (CAGR) of **~20–24%**. Market dynamics reflect a **moderately fragmented yet bifurcated sector**: hyperscalers dominate native workloads with free proprietary tooling, while independent orchestration is anchored by category champions alongside emerging multi-IaC orchestration startups, preventing a single "winner-take-all" outcome.
-
-## SaaS/Hosted Platforms
-
-| Platform | Company Valuation / Revenue | Pricing (Starting Tier) | Free Tier Limits | Key Highlights & Architecture |
+| 🏢 Platform | 💰 Company Valuation / Revenue | 🏷️ Pricing (Starting Tier) | 🎁 Free Tier Limits | ⚙️ Key Highlights & Architecture |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Microsoft (Azure Bicep)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)** | Market Cap: ~$3.1T+ / Revenue: ~$245B+ | **$0.00** (Included with Azure resource usage; no engine license fees) | **Free forever without operational limits** (Zero tool cost; standard Azure resource deployment quota limits apply) | Native domain-specific language compiling to ARM JSON; VS Code extension with IntelliSense and what-if preview. |
 | **[Amazon AWS (CloudFormation)](https://aws.amazon.com/cloudformation/)** | Market Cap: ~$2.0T+ / Revenue: ~$100B+ (AWS) | **$0.00** for standard `AWS::*` resources; **$0.0009** per third-party/hook operation | **Free forever for all standard AWS resources**; 1,000 extension handler operations/month free for third-party extensions | Native JSON/YAML template engine, change sets, drift detection, and StackSets across multi-account/multi-region setups. |
@@ -53,90 +62,84 @@ The global Infrastructure as Code (IaC) and Cloud Systems Management market is e
 | **[Spacelift](https://spacelift.io/)** | Funding: ~$73M raised (Series C) / Revenue: ~$5M–$10M ARR | **~$20,000 / year** (Starter+ entry paid tier with private workers & annual commitment) | **Free forever for up to 2 users**, 1 public worker (1 concurrent run), unlimited stacks & VCS integrations; 14-day full-feature trial for paid tier | Concurrency-driven multi-IaC orchestration supporting Terraform, OpenTofu, Pulumi, CloudFormation, and Kubernetes; OPA policies. |
 | **[Scalr](https://scalr.com/)** | Funding: ~$7.35M raised / Revenue: ~$3M–$5M ARR | **$0.99 / run** (Pay-as-you-go Business plan for runs beyond monthly free quota) | **Free forever for up to 50 runs/month**, includes 5 concurrent runs, unlimited users, environments, OPA policies, and drift detection | Drop-in Terraform Cloud replacement; run-based billing, PR comment controls (`/scalr plan`, `/scalr apply`), and full OPA governance. |
 
-## Open-Source GitHub Projects
+---
 
+## 🔓 Open-Source GitHub Projects
 
+The open-source landscape offers powerful self-hosted alternatives, custom reconciliation loops, and developer-first CI/CD control planes. Repositories below are ordered in **descending star count**.
 
-- **[OpenTofu](https://github.com/opentofu/opentofu)**  
+1. ### 🌐 [OpenTofu](https://github.com/opentofu/opentofu) [![Stars](https://img.shields.io/github/stars/opentofu/opentofu?style=social&color=white)](https://github.com/opentofu/opentofu/stargazers)
+   - **The MPL-2.0 open-source Terraform fork**, community-governed under the Linux Foundation.
+   - Drop-in compatibility with HCL syntax, providers, and modules.
+   - Enhances state/plan encryption, skip-resource controls during plan/apply, provider iteration (`for_each`), and early variable evaluation.
 
-  **The MPL-2.0 licensed Terraform fork.** Community-governed under the Linux Foundation, created after HashiCorp's BSL switch . **Terraform-compatible**: same HCL syntax, same providers, same modules. **New features beyond Terraform**: state and plan encryption, skip resources during plan/apply, provider iteration (`for_each`), early variable evaluation . **Migration is mechanical** for most workspaces—run `tofu init -upgrade` and `tofu plan` to verify . Best for teams that want Terraform compatibility with true open-source licensing and community governance.
+2. ### 💻 [Pulumi](https://github.com/pulumi/pulumi) [![Stars](https://img.shields.io/github/stars/pulumi/pulumi?style=social&color=white)](https://github.com/pulumi/pulumi/stargazers)
+   - **Multi-language IaC engine** enabling developers to define cloud infrastructure using TypeScript, Python, Go, C#, Java, and YAML.
+   - Supports self-managed DIY state storage backends (S3, GCS, Azure Blob, local) without SaaS lock-in.
+   - Features ephemeral test stacks, policy-as-code (CrossGuard), and high-fidelity modular software abstractions.
 
+3. ### ☸️ [Crossplane](https://github.com/crossplane/crossplane) [![Stars](https://img.shields.io/github/stars/crossplane/crossplane?style=social&color=white)](https://github.com/crossplane/crossplane/stargazers)
+   - **Kubernetes-native declarative control plane** (CNCF Graduated project).
+   - Extends the Kubernetes API with Custom Resource Definitions (CRDs) for cloud resources (AWS, Azure, GCP) with active, continuous reconciliation loops that remediate drift automatically.
+   - Allows platform teams to author composable Custom APIs (XRDs) for internal self-service developer platforms.
 
+4. ### 📦 [Terragrunt](https://github.com/gruntwork-io/terragrunt) [![Stars](https://img.shields.io/github/stars/gruntwork-io/terragrunt?style=social&color=white)](https://github.com/gruntwork-io/terragrunt/stargazers)
+   - **Flexible orchestrator and thin wrapper for Terraform/OpenTofu** that keeps configurations DRY (Don't Repeat Yourself).
+   - Manages remote state configuration centrally, enforces explicit dependency graphs across multiple modules, and runs concurrent multi-stack operations.
 
-- **[Crossplane](https://github.com/crossplane/crossplane)**  
+5. ### 🤖 [Atlantis](https://github.com/runatlantis/atlantis) [![Stars](https://img.shields.io/github/stars/runatlantis/atlantis?style=social&color=white)](https://github.com/runatlantis/atlantis/stargazers)
+   - **Self-hosted GitOps pull request automation for Terraform and OpenTofu**.
+   - Executes `terraform plan` on pull requests, outputs interactive diffs directly into PR comments, and applies configurations automatically upon merge or approval.
 
-  **The Kubernetes-native control plane.** CNCF Graduated project that extends Kubernetes with custom resources for cloud services (RDS, S3, Azure SQL, etc.) and platform abstractions . **Key architectural difference from Terraform**: continuous reconciliation rather than triggered runs—controllers observe live infrastructure and correct drift automatically, typically within a minute . **Crossplane v2** (August 2025) made composite resources and managed resources namespaced by default, removed claims for new XRs, and allowed compositions to include any Kubernetes resource . **Trade-offs**: no `plan` step (review happens on manifests, not diffs); the control-plane cluster becomes critical infrastructure; provider CRDs are heavy on the API server . Best for teams already running Kubernetes that want self-service infrastructure with GitOps-native workflows and continuous drift correction.
+6. ### ⛏️ [Digger](https://github.com/diggerhq/digger) [![Stars](https://img.shields.io/github/stars/diggerhq/digger?style=social&color=white)](https://github.com/diggerhq/digger/stargazers)
+   - **Open-source CI/CD orchestrator for Terraform and OpenTofu** that runs directly within existing CI pipelines (GitHub Actions, GitLab CI, Bitbucket).
+   - Eliminates need for duplicate compute infrastructure while providing concurrency locking, drift checks, and PR automation.
 
+7. ### 🔀 [Plural](https://github.com/pluralsh/plural) [![Stars](https://img.shields.io/github/stars/pluralsh/plural?style=social&color=white)](https://github.com/pluralsh/plural/stargazers)
+   - **Unified GitOps continuous delivery & infrastructure control plane** designed for Kubernetes clusters and multi-cloud applications.
+   - Provides automated dependency management, fleet-wide upgrades, and a unified management console across hybrid topologies.
 
+8. ### 👥 [Terrateam](https://github.com/terrateamio/terrateam) [![Stars](https://img.shields.io/github/stars/terrateamio/terrateam?style=social&color=white)](https://github.com/terrateamio/terrateam/stargazers)
+   - **Open-source GitOps orchestration platform** built specifically for GitHub Actions with deep Terraform, OpenTofu, and Terragrunt support.
+   - Features directory-based locking, automated plan reviews, and customizable RBAC workflows.
 
-- **[Pulumi](https://github.com/pulumi/pulumi)**  
+9. ### 🔌 [Google Cloud Config Connector](https://github.com/GoogleCloudPlatform/k8s-config-connector) [![Stars](https://img.shields.io/github/stars/GoogleCloudPlatform/k8s-config-connector?style=social&color=white)](https://github.com/GoogleCloudPlatform/k8s-config-connector/stargazers)
+   - **Kubernetes addon for managing GCP resources** declaratively via CRDs.
+   - Forms the underlying foundation for Google Cloud Config Controller, continuously reconciling Google Cloud resources through Kubernetes control loops.
 
-  Multi-language IaC engine with SDKs for TypeScript, Python, Go, C#, and Java. **Self-managed backend** available (DIY state storage) if you don't use Pulumi Cloud . Supports ephemeral environments (Review Stacks, TTL Stacks) and policy as code. **Trade-off**: some advanced features (AI agent, managed deployments) are Pulumi Cloud-specific. Best for teams that want general-purpose programming languages for infrastructure and are willing to manage their own state backend if avoiding SaaS.
-
-
-
-- **[Atlantis](https://github.com/runatlantis/atlantis)**  
-
-  **Self-hosted PR automation for Terraform.** Runs `terraform plan` on pull requests and applies on merge, with PR comments for control. **Free and open-source**. **Total cost includes operations**: hosting, scaling, patching, and upgrades typically consume 0.5–1 FTE; RBAC, audit trails, and drift detection must be assembled from other tools . Best for single teams that want plan/apply automation in PRs and have someone willing to operate it.
-
-
-
-- **[AWS CloudFormation (Open Source Components)](https://github.com/aws-cloudformation)**  
-
-  While the CloudFormation service is proprietary, AWS open-sources components like `cfn-lint` (template validation), `cfn-guard` (policy as code), and the CloudFormation CLI for resource providers. Best for teams building custom tooling around AWS-native IaC.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Terragrunt** — A thin wrapper for Terraform/OpenTofu that provides DRY configurations, remote state management, and dependency handling between modules. Best for teams managing many Terraform workspaces.
-
-- **Config Controller (GCP)** — Google's recommended replacement for Deployment Manager, providing Kubernetes-native management of GCP resources via Config Connector. Best for GCP teams that want a Crossplane-like experience .
-
-- **Frameworks for building custom systems**: Use **OpenTofu** as the IaC engine with **Atlantis** for PR automation if self-hosting, or **Scalr** if you want managed governance without enterprise pricing. Choose **Crossplane** when Kubernetes-native continuous reconciliation and GitOps are priorities, potentially alongside OpenTofu for stable foundation layers . Use **Pulumi** when application developers need to define infrastructure in general-purpose languages.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- **Execution model matters more than tool name**: Terraform/OpenTofu/Pulumi use triggered runs with a `plan` preview; Crossplane uses continuous reconciliation without a `plan` step . Choose based on whether you want explicit approval gates or automatic drift correction.
-
-- **Pricing models vary significantly**: Spacelift charges by concurrency (costly for bursty workloads); Terraform Cloud charges by resources under management (costly at scale); Scalr charges per-run; env0 offers a generous free tier . Model your actual usage pattern before committing.
-
-- **Google Cloud Deployment Manager is effectively deprecated**: GCP recommends Terraform or Config Controller for new IaC deployments .
-
-- **Terraform's BSL license restricts commercial redistribution**: OpenTofu (MPL-2.0) is the community-governed alternative for teams requiring OSI-approved open-source licensing .
-
-
+10. ### 🛠️ [AWS CloudFormation CLI](https://github.com/aws-cloudformation/cloudformation-cli) [![Stars](https://img.shields.io/github/stars/aws-cloudformation/cloudformation-cli?style=social&color=white)](https://github.com/aws-cloudformation/cloudformation-cli/stargazers)
+    - **Open-source toolset and SDK** for authoring and maintaining custom CloudFormation resource providers, private registry types, and guardrail hooks.
 
 ---
 
+## 🤝 How to Contribute
 
+Contributions are warmly welcome! Help expand this ecosystem tracker:
 
-**Made for platform engineers, DevOps teams, and organizations building declarative infrastructure management.**  
+1. 🍴 Fork this repository.
+2. 📝 Add or update an entry in `README.md` following the existing format.
+3. 🔍 Ensure links are active and descriptions are factual and objective.
+4. 🚀 Submit a Pull Request with a clear description of your additions.
 
-Let's make infrastructure control planes more open, appropriately scoped, and understandable.
+---
+
+## 💖 Support
+
+If you find this repository helpful for evaluating infrastructure control planes and IaC orchestration engines:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and share** it with your DevOps, SRE, and platform engineering teams.
+- ☕ **Support the maintainer**: Buy a coffee or sponsor ongoing maintenance on the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**!
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Infrastructure-Control-Planes&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Infrastructure-Control-Planes&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is an independent **community-curated** list — not an endorsement of any single vendor.
+- **Execution model matters more than tool name**: Plan/apply workflows (Terraform/OpenTofu/Pulumi) operate on scheduled/triggered gates, whereas continuous reconciliation engines (Crossplane/Config Connector) reconcile drift constantly without a manual `plan` approval.
+- **Pricing models vary significantly**: Spacelift focuses on concurrency; Terraform Cloud charges by resources under management; Scalr utilizes run-based pricing; env0 provides generous free-tier quotas. Model your organization's resource counts and run frequency before selecting a platform.
