@@ -30,7 +30,8 @@
     </pattern>
 
     <style>
-      .text-title {
+    /* <![CDATA[ */
+.text-title {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         font-weight: 800;
         font-size: 46px;
@@ -49,7 +50,7 @@
         letter-spacing: 0.5px;
       }
 
-      /* Animated background circles & laser pulses */
+      /* Animated background circles and laser pulses */
       @keyframes pulseGlow {
         0%, 100% { opacity: 0.3; transform: scale(1); }
         50% { opacity: 0.6; transform: scale(1.08); }
@@ -87,6 +88,7 @@
         transform-origin: 1050px 90px;
         animation: radarSweep 12s linear infinite;
       }
+    /* ]]> */
     </style>
   </defs>
 
@@ -159,13 +161,13 @@
       <text x="18" y="24" class="badge-text" fill="#e2e8f0">🔄 Continuous Reconciliation</text>
     </g>
 
-    <!-- Pill 3: GitOps & Policy as Code -->
+    <!-- Pill 3: GitOps and Policy as Code -->
     <g transform="translate(455, 0)">
       <rect width="215" height="38" rx="8" fill="url(#pillGrad)" stroke="#475569" stroke-width="1"/>
       <text x="18" y="24" class="badge-text" fill="#e2e8f0">🛡️ Policy &amp; Drift Detection</text>
     </g>
 
-    <!-- Pill 4: Open Source & Enterprise SaaS -->
+    <!-- Pill 4: Open Source and Enterprise SaaS -->
     <g transform="translate(685, 0)">
       <rect width="235" height="38" rx="8" fill="url(#pillGrad)" stroke="#475569" stroke-width="1"/>
       <text x="18" y="24" class="badge-text" fill="#e2e8f0">🚀 Self-Hosted &amp; Managed SaaS</text>
