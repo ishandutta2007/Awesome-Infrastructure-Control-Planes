@@ -30,67 +30,28 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global Infrastructure as Code (IaC) and Cloud Systems Management market is estimated at **$1.5B to $7B+** (broad cloud automation software reaching upwards of $40B+), compounding at an annual growth rate (CAGR) of **~20–24%**. Market dynamics reflect a **moderately fragmented yet bifurcated sector**: hyperscalers dominate native workloads with free proprietary tooling, while independent orchestration is anchored by category champions alongside emerging multi-IaC orchestration startups, preventing a single "winner-take-all" outcome.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Terraform Cloud (HCP Terraform)](https://www.hashicorp.com/products/terraform)**  
-
-  HashiCorp's managed platform for Terraform. Provides remote state, plan/apply execution, policy enforcement (Sentinel), and team collaboration. **Pricing is resource-based** (resources under management), which can become expensive at scale . **Licensing note**: Terraform moved from open-source to BSL in 2023, prompting the OpenTofu fork . Best for teams that want HashiCorp-backed managed Terraform with minimal operational overhead.
-
-
-
-- **[Pulumi Cloud](https://www.pulumi.com/cloud/)**  
-
-  The default state backend and managed platform for Pulumi. Adds RBAC with SAML/SSO, reusable configuration and secrets via Pulumi ESC, policy as code enforcement, cloud resource inventory, scheduled drift detection, managed deployments, and an AI agent (Pulumi Neo) for debugging and writing IaC . **Self-hosted edition available**. Best for teams using Pulumi that want a managed backend without running their own state infrastructure.
-
-
-
-- **[Spacelift](https://spacelift.io/)**  
-
-  IaC orchestration platform supporting Terraform, OpenTofu, Pulumi, CloudFormation, Kubernetes, and Ansible. **Concurrency-based pricing** (charges for parallel runs regardless of utilization) . **Starter tier** includes policy features but caps users at 10 and gates drift detection and SAML SSO to higher tiers . Best for teams running multiple IaC tools that want one control plane and deep workflow customization.
-
-
-
-- **[env0](https://www.env0.com/)**  
-
-  Multi-IaC platform with strong FinOps capabilities—cost tracking, budget controls, and per-environment cost attribution . **Free-forever tier**: 250 runs/month across up to 30 active environments with unlimited users (as of August 2026) . Best for teams where cost management and developer self-service are primary concerns.
-
-
-
-- **[Scalr](https://scalr.com/)**  
-
-  Terraform/OpenTofu-focused platform positioned as a drop-in Terraform Cloud replacement. **Usage-based pricing** (per-run) . Governance features (OPA policy enforcement with advisory/soft-mandatory/hard-mandatory levels, drift detection) are available on the **free tier**, unlike Spacelift where they're gated . Supports `/scalr plan` and `/scalr apply` PR comment commands . Best for Terraform-only teams migrating from Terraform Cloud that want deeper governance without enterprise-tier pricing.
-
-
-
-- **[Morpheus Data](https://www.morpheusdata.com/)**  
-
-  Cloud management platform for hybrid cloud environments. Provides unified provisioning, app lifecycle management, migration, self-service catalogs, and compliance controls across bare metal, VMs, and containers . **Quote-based pricing**; users note a learning curve for beginners and lack of visual drag-and-drop deployment . Best for mid-market and enterprise teams managing hybrid infrastructure that need a single control plane for cloud operations.
-
-
-
-- **[AWS CloudFormation](https://aws.amazon.com/cloudformation/)**  
-
-  AWS's native IaC service. **Free** (you pay only for provisioned resources). JSON/YAML templates with change sets for preview, automatic rollback on failure, drift detection, and StackSets for multi-account/multi-region deployment . Best for AWS-native teams that want zero-cost IaC with deep AWS integration.
-
-
-
-- **[Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)**  
-
-  Microsoft's purpose-built DSL that compiles to ARM JSON. **Free** with Azure usage. VS Code extension with IntelliSense, what-if for preview, and module registry . Best for Azure-native teams that want a cleaner alternative to raw ARM templates.
-
-
+| Platform | Company Valuation / Revenue | Pricing (Starting Tier) | Free Tier Limits | Key Highlights & Architecture |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft (Azure Bicep)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)** | Market Cap: ~$3.1T+ / Revenue: ~$245B+ | **$0.00** (Included with Azure resource usage; no engine license fees) | **Free forever without operational limits** (Zero tool cost; standard Azure resource deployment quota limits apply) | Native domain-specific language compiling to ARM JSON; VS Code extension with IntelliSense and what-if preview. |
+| **[Amazon AWS (CloudFormation)](https://aws.amazon.com/cloudformation/)** | Market Cap: ~$2.0T+ / Revenue: ~$100B+ (AWS) | **$0.00** for standard `AWS::*` resources; **$0.0009** per third-party/hook operation | **Free forever for all standard AWS resources**; 1,000 extension handler operations/month free for third-party extensions | Native JSON/YAML template engine, change sets, drift detection, and StackSets across multi-account/multi-region setups. |
+| **[HashiCorp (Terraform Cloud / HCP Terraform)](https://www.hashicorp.com/products/terraform)** | Valuation: $6.4B (Acquired by IBM) / Revenue: ~$646M | **$0.10 / resource / month** (Essentials tier; Standard tier starts at $0.47 / resource / month) | **Up to 500 managed resources free forever**, 1 concurrent run, unlimited users, VCS integrations | Official managed platform for Terraform/OpenTofu; provides remote state, Sentinel/OPA policies, and team collaboration. |
+| **[Pulumi (Pulumi Cloud)](https://www.pulumi.com/cloud/)** | Valuation: ~$1.5B (Series D) / Revenue: ~$15M–$20M+ ARR | **$40 / month** (Essentials tier, includes up to 500 managed resources and unlimited users) | **Free forever for 1 user**, unlimited resources and stacks, includes up to 500 deployment workflow minutes/month | Multi-language IaC engine (TypeScript, Python, Go, C#); managed state, Pulumi ESC secrets, drift detection, and Pulumi Neo AI. |
+| **[Morpheus Data (HPE Morpheus Software)](https://www.morpheusdata.com/)** | Valuation: ~$83M+ prior to acquisition (Acquired by HPE) / Revenue: Enterprise multi-million ARR | Custom / **Per-socket software pricing** (Starting via HPE GreenLake private cloud plans) | **60-day free trial** (up to 6 sockets with VM Essentials evaluation) or **365-day Community Edition** (up to 3 sockets for non-production lab use) | Enterprise CMP for hybrid cloud & bare metal orchestration; self-service catalog, governance, and VMware-to-KVM migration. |
+| **[env0](https://www.env0.com/)** | Valuation: ~$72M (Series A) / Revenue: ~$5M+ ARR | Custom annual contracts (Paid tiers: *Cloud Navigator* & *Cloud Pilot* with unlimited runs & concurrency) | **Free forever for up to 250 runs/month**, up to 30 active environments, unlimited users and agents | Multi-IaC platform supporting Terraform, OpenTofu, Terragrunt, and Pulumi; native FinOps cost tracking and role-based policies. |
+| **[Spacelift](https://spacelift.io/)** | Funding: ~$73M raised (Series C) / Revenue: ~$5M–$10M ARR | **~$20,000 / year** (Starter+ entry paid tier with private workers & annual commitment) | **Free forever for up to 2 users**, 1 public worker (1 concurrent run), unlimited stacks & VCS integrations; 14-day full-feature trial for paid tier | Concurrency-driven multi-IaC orchestration supporting Terraform, OpenTofu, Pulumi, CloudFormation, and Kubernetes; OPA policies. |
+| **[Scalr](https://scalr.com/)** | Funding: ~$7.35M raised / Revenue: ~$3M–$5M ARR | **$0.99 / run** (Pay-as-you-go Business plan for runs beyond monthly free quota) | **Free forever for up to 50 runs/month**, includes 5 concurrent runs, unlimited users, environments, OPA policies, and drift detection | Drop-in Terraform Cloud replacement; run-based billing, PR comment controls (`/scalr plan`, `/scalr apply`), and full OPA governance. |
 
 ## Open-Source GitHub Projects
 
