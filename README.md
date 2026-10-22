@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Infrastructure-Control-Planes?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Infrastructure-Control-Planes?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Infrastructure-Control-Planes?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Infrastructure-Control-Planes/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License" /></a>
@@ -66,7 +66,7 @@ The global Infrastructure as Code (IaC) and Cloud Systems Management market is e
 
 ## 🔓 Open-Source GitHub Projects
 
-The open-source landscape offers powerful self-hosted alternatives, custom reconciliation loops, and developer-first CI/CD control planes. Repositories below are ordered in **descending star count**.
+The open-source landscape offers powerful self-hosted alternatives, custom reconciliation loops, and developer-first CI/CD control planes. Repositories below are ordered in **descending Stars_Count**.
 
 1. ### 🌐 [OpenTofu](https://github.com/opentofu/opentofu) [![Stars](https://img.shields.io/github/stars/opentofu/opentofu?style=social&color=white)](https://github.com/opentofu/opentofu/stargazers)
    - **The MPL-2.0 open-source Terraform fork**, community-governed under the Linux Foundation.
@@ -143,3 +143,12 @@ If you find this repository helpful for evaluating infrastructure control planes
 - This is an independent **community-curated** list — not an endorsement of any single vendor.
 - **Execution model matters more than tool name**: Plan/apply workflows (Terraform/OpenTofu/Pulumi) operate on scheduled/triggered gates, whereas continuous reconciliation engines (Crossplane/Config Connector) reconcile drift constantly without a manual `plan` approval.
 - **Pricing models vary significantly**: Spacelift focuses on concurrency; Terraform Cloud charges by resources under management; Scalr utilizes run-based pricing; env0 provides generous free-tier quotas. Model your organization's resource counts and run frequency before selecting a platform.
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Infrastructure-Control-Planes&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Infrastructure-Control-Planes_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Infrastructure-Control-Planes_growth.svg">
+  </picture>
+</a>
